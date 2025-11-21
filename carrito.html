@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="carrito.css">
+    <title>Carrito de Ropa</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="logo1.jpg" alt="logo" id="logo"></a>
+            <div>
+                <a href="#">MI CURRICULUM</a>
+                <a href="#">MIS DEPORTES</a>
+                <a href="carrito.html" id="cart">
+                    <img src="carrito1.jpg" alt="carrito de compras">
+                    <span id="cuenta-carrito">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 style="text-align: center; color: #2c3e50; margin: 20px 0;">Tu Carrito de Compras</h2>
+        
+        <p id="carrito-vacio">¡Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+        
+        <section id="cart-container"></section>
+
+        <section id="totales" class="escondido">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: $<span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Vaciar Carrito</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>ALGO BONITO <a href="https://algo-bonito.com/" target="_blank">ALGO BONITO</a></p>
+    </footer>
+
+    
+    <script src="ropa.js"></script>
+    <script src="carritoservice1.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>
